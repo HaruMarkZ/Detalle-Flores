@@ -14,7 +14,20 @@
 </head>
 
 <body class="container">
-    <div class="night"></div>
+    <div class="night">
+      <button class="button" onclick="playSong()">Tócame!!</button>
+
+  <audio id="audio-player" src="img/Floricienta.mp3" preload="auto"></audio>
+  <script>
+    function playSong() {
+      const audio = document.getElementById('audio-player');
+      audio.play();
+    }
+
+
+  </script>
+  <script src="main.js"></script>
+    </div>
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
@@ -322,18 +335,7 @@
       </div>
     </div>
   </div>
-  <button class="button" onclick="playSong()">Tócame!!</button>
-
-  <audio id="audio-player" src="img/Floricienta.mp3" preload="auto"></audio>
-  <script>
-    function playSong() {
-      const audio = document.getElementById('audio-player');
-      audio.play();
-    }
-
-
-  </script>
-  <script src="main.js"></script>
+  
 </body>
 
 </html>
